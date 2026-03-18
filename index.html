@@ -20,7 +20,7 @@ header {
   top:0;
   background:#000;
   color:white;
-  padding:20px 40px;
+  padding:18px 30px;
   display:flex;
   justify-content:space-between;
   align-items:center;
@@ -28,20 +28,20 @@ header {
 
 header h1 {
   font-family:'Playfair Display', serif;
-  letter-spacing:1px;
+  font-size:20px;
 }
 
 nav a {
   color:#ccc;
-  margin-left:20px;
+  margin-left:18px;
   text-decoration:none;
-  font-size:14px;
+  font-size:13px;
 }
 
 .hero {
-  height:90vh;
-  background:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.6)),
-  url('https://images.unsplash.com/photo-1602751584552-8ba73aad10e1') center/cover no-repeat;
+  height:88vh;
+  background:linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.75)),
+  url('https://images.unsplash.com/photo-1519741497674-611481863552') center/cover no-repeat;
   display:flex;
   align-items:center;
   justify-content:center;
@@ -51,21 +51,22 @@ nav a {
 }
 
 .hero h2 {
-  font-size:52px;
+  font-size:44px;
   font-family:'Playfair Display', serif;
-  margin-bottom:10px;
+  line-height:1.2;
+  margin-bottom:12px;
 }
 
 .hero p {
-  font-size:17px;
+  font-size:16px;
   opacity:0.9;
 }
 
 .btn {
-  margin-top:25px;
+  margin-top:22px;
   background:gold;
   color:black;
-  padding:14px 28px;
+  padding:12px 26px;
   border:none;
   border-radius:30px;
   font-weight:500;
@@ -73,92 +74,90 @@ nav a {
 }
 
 .section {
-  padding:80px 40px;
+  padding:70px 30px;
   text-align:center;
 }
 
 .section h3 {
   font-family:'Playfair Display', serif;
-  font-size:34px;
+  font-size:30px;
 }
 
 .products {
   display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-  gap:30px;
-  margin-top:40px;
+  grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+  gap:25px;
+  margin-top:35px;
 }
 
 .product {
   background:white;
-  border-radius:16px;
+  border-radius:14px;
   overflow:hidden;
-  box-shadow:0 10px 25px rgba(0,0,0,0.08);
+  box-shadow:0 8px 20px rgba(0,0,0,0.08);
   transition:0.3s;
 }
 
 .product:hover {
-  transform:translateY(-6px);
+  transform:translateY(-5px);
 }
 
 .product img {
   width:100%;
-  height:260px;
+  height:240px;
   object-fit:cover;
 }
 
 .product-content {
-  padding:18px;
+  padding:16px;
 }
 
 .story {
   background:#111;
   color:#eee;
-  padding:80px 30px;
+  padding:70px 25px;
 }
 
 .story p {
-  max-width:700px;
+  max-width:650px;
   margin:auto;
-  line-height:1.7;
-}
-
-.reviews {
-  background:white;
+  line-height:1.6;
+  font-size:15px;
 }
 
 .review-grid {
   display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-  gap:25px;
-  margin-top:40px;
+  grid-template-columns:repeat(auto-fit,minmax(230px,1fr));
+  gap:20px;
+  margin-top:30px;
 }
 
 .review {
   background:#fafafa;
-  padding:25px;
-  border-radius:12px;
-  box-shadow:0 5px 15px rgba(0,0,0,0.05);
+  padding:20px;
+  border-radius:10px;
+  box-shadow:0 4px 12px rgba(0,0,0,0.05);
+  font-size:14px;
 }
 
 .location {
-  padding:60px 20px;
-  background:#f4f4f4;
+  padding:50px 20px;
+  background:#f2f2f2;
 }
 
 .cta {
   background:#000;
   color:white;
-  padding:80px 20px;
+  padding:70px 20px;
   text-align:center;
 }
 
 footer {
   background:#0a0a0a;
   color:#888;
-  padding:30px;
+  padding:25px;
   text-align:center;
-  font-size:14px;
+  font-size:13px;
 }
 </style>
 </head>
@@ -194,7 +193,7 @@ footer {
       <img src="https://images.unsplash.com/photo-1515562141207-7a88fb7ce338">
       <div class="product-content">
         <h4>Engagement & Fine Rings</h4>
-        <p>Meaningful pieces designed to last and be worn every day.</p>
+        <p>Meaningful pieces designed to last a lifetime.</p>
       </div>
     </div>
 
@@ -202,7 +201,7 @@ footer {
       <img src="custom.jpg">
       <div class="product-content">
         <h4>Custom Fine Jewelry</h4>
-        <p>Work directly with Galalina to create something completely your own.</p>
+        <p>Designed with you, built with precision and care.</p>
       </div>
     </div>
 
@@ -210,7 +209,7 @@ footer {
       <img src="https://images.unsplash.com/photo-1523170335258-f5ed11844a49">
       <div class="product-content">
         <h4>Luxury Watches</h4>
-        <p>Premium timepieces and expert-level service you can trust.</p>
+        <p>Premium timepieces and trusted service.</p>
       </div>
     </div>
 
@@ -220,34 +219,33 @@ footer {
 <section class="story">
   <h3>Meet Galalina</h3>
   <p>
-    GANO Jewelers was built on trust, precision, and real client relationships.
-    Based in Oak Island, NC, Galalina is known for her expertise in ring resizing,
+    GANO Jewelers is built on trust, precision, and real relationships.
+    Based in Oak Island, NC, Galalina is known for expert ring resizing,
     repairs, and custom jewelry.
 
-    Clients choose her because she takes the time to do things right — with honesty,
-    attention to detail, and a level of care that’s hard to find.
-
-    Whether you're fixing something important or creating something new, you're
-    working with someone who understands how much it matters.
+    Clients choose her because she does things right — with honesty,
+    attention to detail, and genuine care. Whether restoring something
+    meaningful or creating something new, you’re working with someone
+    who understands how much it matters.
   </p>
 </section>
 
-<section class="section reviews">
+<section class="section">
   <h3>Client Experience</h3>
 
   <div class="review-grid">
     <div class="review">
-      <p>“She resized my ring perfectly. You can tell she genuinely cares.”</p>
+      <p>“She resized my ring perfectly. You can tell she truly cares.”</p>
       <strong>★★★★★</strong>
     </div>
 
     <div class="review">
-      <p>“Honest, skilled, and easy to work with. Highly recommend.”</p>
+      <p>“Honest, skilled, and easy to work with.”</p>
       <strong>★★★★★</strong>
     </div>
 
     <div class="review">
-      <p>“Fast turnaround and amazing work. I wouldn’t go anywhere else.”</p>
+      <p>“Fast turnaround and amazing work. Highly recommend.”</p>
       <strong>★★★★★</strong>
     </div>
   </div>
@@ -255,12 +253,12 @@ footer {
 
 <section class="location">
   <h3>Serving Oak Island, NC & Nearby Areas</h3>
-  <p>Mobile appointments available for convenience and flexibility.</p>
+  <p>Mobile appointments available for convenience.</p>
 </section>
 
 <section class="cta">
   <h3>Have Something That Needs Work?</h3>
-  <p>Text directly to get a quote or schedule an appointment.</p>
+  <p>Text now for a quick quote or to schedule.</p>
 
   <a href="sms:19107740240">
     <button class="btn">Text Now</button>
@@ -268,7 +266,7 @@ footer {
 </section>
 
 <footer>
-  <p>© 2026 GANO Jewelers • Built to grow her client base</p>
+  <p>© 2026 GANO Jewelers • Built to grow her business</p>
 </footer>
 
 </body>
