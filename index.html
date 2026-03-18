@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GANO Jewelers</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  <style>
+    body { margin: 0; font-family: 'Inter', sans-serif; color: #1a1a1a; background:#fafafa; }
+    header { position: sticky; top: 0; background: rgba(0,0,0,0.9); color: #fff; padding: 20px 50px; display: flex; justify-content: space-between; align-items: center; }
+    header h1 { font-family: 'Playfair Display', serif; margin: 0; }
+    nav a { color: #ddd; margin-left: 25px; text-decoration: none; }
+
+    .hero { height: 90vh; background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1515562141207-7a88fb7ce338') center/cover no-repeat; display: flex; align-items: center; justify-content: center; text-align: center; color: white; }
+    .hero h2 { font-size: 56px; font-family: 'Playfair Display', serif; }
+
+    .btn { margin-top: 20px; background: gold; color: black; padding: 14px 28px; border: none; border-radius: 30px; cursor: pointer; }
+
+    .section { padding: 80px 60px; text-align: center; }
+    .section h3 { font-family: 'Playfair Display', serif; font-size: 36px; }
+
+    .products { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 30px; margin-top: 40px; }
+    .product { background: white; border-radius: 18px; overflow: hidden; box-shadow: 0 10px 25px rgba(0,0,0,0.08); }
+    .product img { width: 100%; height: 260px; object-fit: cover; }
+    .product-content { padding: 20px; }
+
+    .story { background:#111; color:#eee; padding:80px 40px; }
+    .story p { max-width:700px; margin:auto; line-height:1.7; }
+
+    .reviews { background:#fff; }
+    .review-grid { display:grid; grid-template-columns: repeat(auto-fit,minmax(250px,1fr)); gap:25px; margin-top:40px; }
+    .review { background:#fafafa; padding:25px; border-radius:12px; box-shadow:0 5px 15px rgba(0,0,0,0.05); }
+
+    .cta { background: linear-gradient(135deg, #000, #222); color: white; padding: 80px 20px; text-align: center; }
+
+    footer { background:#0a0a0a; color:#888; padding:30px; text-align:center; }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>GANO Jewelers</h1>
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">Collections</a>
+    <a href="#">Story</a>
+    <a href="#">Contact</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <div>
+    <h2>Crafted With Precision. Designed With Heart.</h2>
+    <p>Custom Jewelry • Ring Resizing • Repairs</p>
+    <a href="sms:19107740240"><button class="btn">Text for Appointment</button></a>
+  </div>
+</section>
+
+<section class="section">
+  <h3>Featured Work</h3>
+  <div class="products">
+    <div class="product">
+      <img src="https://images.unsplash.com/photo-1603569283847-aa295f0d016a" />
+      <div class="product-content">
+        <h4>Engagement Rings</h4>
+        <p>Meaningful pieces crafted to last forever.</p>
+      </div>
+    </div>
+    <div class="product">
+      <img src="https://images.unsplash.com/photo-1617038220319-276d3cfab638" />
+      <div class="product-content">
+        <h4>Custom Designs</h4>
+        <p>Bring your vision to life with expert craftsmanship.</p>
+      </div>
+    </div>
+    <div class="product">
+      <img src="https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f" />
+      <div class="product-content">
+        <h4>Repairs & Resizing</h4>
+        <p>Precision service you can trust.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="story">
+  <h3>The Story Behind GANO</h3>
+  <p>
+    Galalina built GANO Jewelers on a foundation of trust, craftsmanship, and genuine care for her clients.
+    Known for going above and beyond, she takes pride in helping people restore and create meaningful pieces
+    that carry real emotional value. Every ring resized, every repair completed, and every custom piece designed
+    is handled with precision and dedication.
+  </p>
+</section>
+
+<section class="section reviews">
+  <h3>What Clients Say</h3>
+  <div class="review-grid">
+    <div class="review">
+      <p>“Incredible work and attention to detail. You can tell she truly cares.”</p>
+      <strong>★★★★★</strong>
+    </div>
+    <div class="review">
+      <p>“Fast, honest, and extremely skilled. I wouldn’t go anywhere else.”</p>
+      <strong>★★★★★</strong>
+    </div>
+    <div class="review">
+      <p>“She made the whole process easy and stress-free. Highly recommend.”</p>
+      <strong>★★★★★</strong>
+    </div>
+  </div>
+</section>
+
+<section class="cta">
+  <h3>Ready to Fix or Create Something Special?</h3>
+  <a href="sms:19107740240"><button class="btn">Text Now</button></a>
+</section>
+
+<footer>
+  <p>© 2026 GANO Jewelers • Designed for growth</p>
+</footer>
+
+</body>
+</html>
