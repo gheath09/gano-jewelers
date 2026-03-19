@@ -24,16 +24,15 @@ export default function Services() {
           {services.map((service, i) => (
             <div
               key={i}
-              style={{ borderBottom: '1px solid rgba(212,175,55,0.12)' }}
-              className="flex items-center gap-8 py-7 last:border-0"
+              className="service-row flex items-center gap-8 py-7 last:border-0"
             >
               <span
                 style={{ color: 'rgba(212,175,55,0.5)', fontVariantNumeric: 'tabular-nums' }}
-                className="text-xs w-6 shrink-0"
+                className="service-number text-xs w-6 shrink-0"
               >
                 {String(i + 1).padStart(2, '0')}
               </span>
-              <span style={{ color: 'rgba(248,248,248,0.8)' }} className="text-lg font-light">
+              <span className="service-text text-lg font-light">
                 {service}
               </span>
             </div>
