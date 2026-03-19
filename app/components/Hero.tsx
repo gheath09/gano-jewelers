@@ -110,6 +110,32 @@ export default function Hero() {
           </span>
         </h1>
         <div className="hero-fade-3">
+          <p
+            style={{
+              color: '#D4AF37',
+              fontFamily: "'Cormorant Garamond', Georgia, serif",
+              fontSize: '1.05rem',
+              fontWeight: 400,
+              letterSpacing: '0.18em',
+              marginBottom: '0.3em',
+            }}
+            className="mx-auto"
+          >
+            Galina Gano
+          </p>
+          <p
+            style={{
+              color: 'rgba(212,175,55,0.6)',
+              fontFamily: "'Cormorant Garamond', Georgia, serif",
+              fontSize: '0.78rem',
+              fontWeight: 300,
+              letterSpacing: '0.35em',
+              textTransform: 'uppercase',
+            }}
+            className="mx-auto mb-10"
+          >
+            Personal Jeweler
+          </p>
           <div
             style={{ width: '48px', height: '1px', backgroundColor: '#D4AF37', opacity: 0.6 }}
             className="mx-auto mb-10"
@@ -126,7 +152,7 @@ export default function Hero() {
             }}
             className="mx-auto"
           >
-            Fine jewelry, designed with intention — and made to carry the moments that matter most.
+            Fine jewelry, designed with intention and made to carry the moments that matter most.
           </p>
           <div
             style={{ width: '1px', height: '64px', backgroundColor: 'rgba(212,175,55,0.3)' }}
