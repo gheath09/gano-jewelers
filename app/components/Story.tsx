@@ -1,30 +1,34 @@
-import React from 'react';
-
-const Story: React.FC = () => {
+export default function Story() {
   return (
-    <div>
-      <h1>Galina's Journey</h1>
-      <p>
-        Born in Estonia, Galina's passion for jewelry began at a young age, inspired by the intricate designs and cultural heritage of her homeland. 
-      </p>
-      <p>
-        After moving to the United States, her love for jewelry transformed into a lifelong profession. She has dedicated herself to 
-        creating beautiful, personalized pieces that reflect individual stories and memories.
-      </p>
-      <p>
-        Married to a dedicated marine, Galina understands the importance of meaningful connections. She often crafts pieces that symbolize love, 
-        resilience, and the bonds of family, drawing from her own experiences.
-      </p>
-      <p>
-        As a family-oriented person, she values creating not just jewelry, but legacies that can be cherished through generations. 
-        This dedication to her craft has positioned her as an expert personal jeweler, where each piece tells a story and carries special significance.
-      </p>
-      <p>
-        With a unique blend of Estonian artistry and American spirit, Galina’s work resonates with clients seeking more than just 
-        jewelry; they find a connection, a piece of art, and a storyteller in each creation.
-      </p>
-    </div>
+    <section style={{ backgroundColor: '#0F0F0F' }} className="py-32 px-8">
+      <div className="max-w-3xl mx-auto">
+        <div
+          style={{ width: '32px', height: '1px', backgroundColor: '#D4AF37' }}
+          className="mb-12"
+        />
+        <p
+          style={{ color: '#D4AF37', letterSpacing: '0.4em' }}
+          className="text-xs uppercase mb-12"
+        >
+          Her Story
+        </p>
+        <p
+          style={{ color: 'rgba(248,248,248,0.65)', lineHeight: '1.9' }}
+          className="text-lg font-light mb-8"
+        >
+          I&apos;m originally from Tallinn, Estonia. My husband served 12 years as a U.S. Marine, and
+          through that journey, I found my path into jewelry. I learned under a master jeweler with
+          over 40 years of experience, and from that moment, I fell in love with diamonds, design,
+          and the meaning behind every piece.
+        </p>
+        <p
+          style={{ color: 'rgba(248,248,248,0.65)', lineHeight: '1.9' }}
+          className="text-lg font-light"
+        >
+          Today, I work directly with each client to create something personal — something that lasts
+          forever.
+        </p>
+      </div>
+    </section>
   );
-};
-
-export default Story;
+}

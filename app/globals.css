@@ -1,30 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600&family=Montserrat:wght@300;400&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-/* Custom animations */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #0B0B0B;
+  color: #F8F8F8;
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  -webkit-font-smoothing: antialiased;
+}
+
 @keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
+  from { opacity: 0; transform: translateY(12px); }
+  to   { opacity: 1; transform: translateY(0); }
 }
 
 .fade-in {
-  animation: fadeIn 0.5s ease-in-out;
+  animation: fadeIn 0.8s ease-out forwards;
 }
 
-/* Custom spacing */
-.spacing-lg {
-  padding: 2rem;
+/* Header */
+.header-bar {
+  background-color: #0B0B0B;
+  border-bottom: 1px solid rgba(212, 175, 55, 0.15);
 }
 
-.spacing-md {
-  padding: 1rem;
+.gano-logo {
+  color: #D4AF37;
+  letter-spacing: 0.3em;
 }
 
-.spacing-sm {
-  padding: 0.5rem;
+.contact-nav-btn {
+  color: #F8F8F8;
+  border: 1px solid rgba(212, 175, 55, 0.4);
+  letter-spacing: 0.2em;
+  background: transparent;
+  cursor: pointer;
+  transition: border-color 0.3s ease, color 0.3s ease;
+}
+.contact-nav-btn:hover {
+  border-color: #D4AF37;
+  color: #D4AF37;
+}
+
+/* Review card hover */
+.review-card {
+  border: 1px solid rgba(212, 175, 55, 0.15);
+  transition: border-color 0.3s ease;
+}
+.review-card:hover {
+  border-color: rgba(212, 175, 55, 0.5);
+}
+
+/* Contact buttons */
+.contact-btn-primary {
+  border: 1px solid #D4AF37;
+  color: #D4AF37;
+  letter-spacing: 0.25em;
+  text-decoration: none;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  display: inline-block;
+}
+.contact-btn-primary:hover {
+  background-color: #D4AF37;
+  color: #0B0B0B;
+}
+
+.contact-btn-secondary {
+  border: 1px solid rgba(212, 175, 55, 0.35);
+  color: rgba(248, 248, 248, 0.55);
+  letter-spacing: 0.25em;
+  text-decoration: none;
+  transition: border-color 0.3s ease, color 0.3s ease;
+  display: inline-block;
+}
+.contact-btn-secondary:hover {
+  border-color: #D4AF37;
+  color: #D4AF37;
 }

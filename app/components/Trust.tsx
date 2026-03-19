@@ -1,31 +1,24 @@
-import React from 'react';
-
-const Trust = () => {
+export default function Trust() {
   return (
-    <div style={{
-      display: 'flex',
-      flexDirection: 'column',
-      alignItems: 'center',
-      padding: '20px',
-      backgroundColor: '#fff',
-      borderRadius: '8px',
-      boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)',
-      margin: '20px',
-    }}>
-      <h1 style={{
-        fontSize: '2em',
-        color: '#333',
-      }}>Our Commitment to You</h1>
-      <p style={{
-        fontSize: '1.2em',
-        color: '#555',
-        textAlign: 'center',
-        maxWidth: '600px',
-      }}>
-        At Gano Jewelers, we emphasize a direct relationship with each of our clients. Our focus is on a no-pressure sales environment, where we source high-end jewelry pieces tailored to your individual style. Experience a personal approach to jewelry shopping that embodies luxury minimal design. We believe each piece should tell a story and reflect your unique taste.
-      </p>
-    </div>
+    <section style={{ backgroundColor: '#0F0F0F' }} className="py-32 px-8">
+      <div className="max-w-3xl mx-auto text-center">
+        <div
+          style={{ width: '32px', height: '1px', backgroundColor: '#D4AF37' }}
+          className="mx-auto mb-14"
+        />
+        <h2
+          style={{ color: '#F8F8F8', letterSpacing: '0.02em', lineHeight: '1.35' }}
+          className="text-3xl font-light mb-8"
+        >
+          I work directly with you — no pressure, no guesswork.
+        </h2>
+        <p
+          style={{ color: 'rgba(248,248,248,0.55)' }}
+          className="text-lg font-light leading-relaxed"
+        >
+          Every piece is personal. I guide you through the process from start to finish.
+        </p>
+      </div>
+    </section>
   );
-};
-
-export default Trust;
+}
