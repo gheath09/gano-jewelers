@@ -1,11 +1,9 @@
-// app/layout.tsx
-
 import './globals.css';
-import { Metadata } from 'next';
+import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Gano Jewelers',
-  description: 'Your description for Gano Jewelers',
+  title: 'GANO — Private Jeweler',
+  description: 'Galina is a private jeweler specializing in custom engagement rings, diamond sourcing, and Rolex sourcing. Personal appointments available.',
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

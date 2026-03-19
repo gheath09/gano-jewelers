@@ -1,17 +1,45 @@
-import React from 'react';
+const services = [
+  'Custom engagement rings & wedding bands',
+  'Diamond sourcing (natural & lab)',
+  'Jewelry repair & stone setting',
+  'Rolex sourcing (new & pre-owned)',
+  'Private appointments & delivery',
+];
 
-const Services: React.FC = () => {
-    return (
+export default function Services() {
+  return (
+    <section style={{ backgroundColor: '#0B0B0B' }} className="py-32 px-8">
+      <div className="max-w-3xl mx-auto">
+        <div
+          style={{ width: '32px', height: '1px', backgroundColor: '#D4AF37' }}
+          className="mb-12"
+        />
+        <p
+          style={{ color: '#D4AF37', letterSpacing: '0.4em' }}
+          className="text-xs uppercase mb-16"
+        >
+          Services
+        </p>
         <div>
-            <h1>Our Services</h1>
-            <ul>
-                <li>Custom Rings</li>
-                <li>Diamond Sourcing</li>
-                <li>Repairs</li>
-                <li>Rolex Sourcing with Luxury Design</li>
-            </ul>
+          {services.map((service, i) => (
+            <div
+              key={i}
+              style={{ borderBottom: '1px solid rgba(212,175,55,0.12)' }}
+              className="flex items-center gap-8 py-7 last:border-0"
+            >
+              <span
+                style={{ color: 'rgba(212,175,55,0.5)', fontVariantNumeric: 'tabular-nums' }}
+                className="text-xs w-6 shrink-0"
+              >
+                {String(i + 1).padStart(2, '0')}
+              </span>
+              <span style={{ color: 'rgba(248,248,248,0.8)' }} className="text-lg font-light">
+                {service}
+              </span>
+            </div>
+          ))}
         </div>
-    );
-};
-
-export default Services;
+      </div>
+    </section>
+  );
+}
