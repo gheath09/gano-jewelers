@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom animations */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.fade-in {
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Custom spacing */
+.spacing-lg {
+  padding: 2rem;
+}
+
+.spacing-md {
+  padding: 1rem;
+}
+
+.spacing-sm {
+  padding: 0.5rem;
+}
