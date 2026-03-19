@@ -36,8 +36,8 @@ export default function Hero() {
           transform: 'translate(-50%, -50%)',
           zIndex: 0,
           pointerEvents: 'none',
-          width: '520px',
-          height: '520px',
+          width: 'min(92vw, 92vh)',
+          height: 'min(92vw, 92vh)',
           display: 'flex',
           alignItems: 'center',
           justifyContent: 'center',
@@ -52,8 +52,8 @@ export default function Hero() {
             width: '100%',
             height: '100%',
             objectFit: 'contain',
-            opacity: 0.07,
-            filter: 'blur(6px) drop-shadow(0 0 40px rgba(212,175,55,0.30))',
+            opacity: 0.12,
+            filter: 'blur(1.5px) drop-shadow(0 0 32px rgba(212,175,55,0.45)) drop-shadow(0 0 80px rgba(212,175,55,0.18))',
           }}
         />
       </div>
@@ -70,7 +70,7 @@ export default function Hero() {
             letterSpacing: '0.04em',
             lineHeight: '1.7',
             maxWidth: '560px',
-            textShadow: '0 0 8px rgba(255, 215, 160, 0.15)',
+            textShadow: '0 0 10px rgba(255, 215, 160, 0.30), 0 1px 2px rgba(0,0,0,0.4)',
           }}
           className="hero-fade-1 mx-auto mb-10"
         >
@@ -81,17 +81,33 @@ export default function Hero() {
             color: '#FFF8F0',
             letterSpacing: '0.12em',
             lineHeight: '1.05',
-            textShadow: '0 0 8px rgba(255, 215, 160, 0.15), 0 0 30px rgba(212,175,55,0.12), 0 0 60px rgba(212,175,55,0.06)',
             display: 'flex',
-            alignItems: 'baseline',
-            justifyContent: 'center',
-            gap: '0.35em',
+            flexDirection: 'column',
+            alignItems: 'center',
+            gap: '0.18em',
           }}
           className="hero-fade-2 font-normal mb-10"
           aria-label="GANO JEWELERS"
         >
-          <span style={{ fontSize: 'clamp(3.5rem, 8vw, 5.625rem)' }}>GANO</span>
-          <span style={{ fontSize: 'clamp(2.3rem, 5.2vw, 3.66rem)' }}>JEWELERS</span>
+          <span
+            style={{
+              fontSize: 'clamp(4.5rem, 12vw, 7.5rem)',
+              textShadow:
+                '0 0 6px rgba(255,248,240,0.55), 0 0 18px rgba(212,175,55,0.55), 0 0 40px rgba(212,175,55,0.28), 0 1px 2px rgba(0,0,0,0.5)',
+            }}
+          >
+            GANO
+          </span>
+          <span
+            style={{
+              fontSize: 'clamp(1.8rem, 4.5vw, 2.9rem)',
+              letterSpacing: '0.28em',
+              textShadow:
+                '0 0 6px rgba(255,248,240,0.35), 0 0 14px rgba(212,175,55,0.30), 0 0 28px rgba(212,175,55,0.14), 0 1px 2px rgba(0,0,0,0.5)',
+            }}
+          >
+            JEWELERS
+          </span>
         </h1>
         <div className="hero-fade-3">
           <div
@@ -100,13 +116,13 @@ export default function Hero() {
           />
           <p
             style={{
-              color: 'rgba(248,248,248,0.85)',
+              color: '#FFF8F0',
               maxWidth: '500px',
               lineHeight: '2',
               fontFamily: "'Cormorant Garamond', Georgia, serif",
               fontSize: '1.15rem',
               fontWeight: 300,
-              textShadow: '0 0 8px rgba(255, 215, 160, 0.15)',
+              textShadow: '0 0 10px rgba(255, 215, 160, 0.22), 0 1px 2px rgba(0,0,0,0.4)',
             }}
             className="mx-auto"
           >
