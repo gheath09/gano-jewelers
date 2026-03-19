@@ -34,7 +34,7 @@ export default function Reviews() {
               <div>
                 <p
                   style={{ color: 'rgba(248,248,248,0.72)', lineHeight: '1.9' }}
-                  className="text-xl font-light"
+                  className="review-quote text-xl font-light"
                 >
                   {quote}
                 </p>

@@ -1,9 +1,32 @@
 export default function Hero() {
+  const sparkles = [
+    { top: '12%', left: '8%',  delay: '0s'    },
+    { top: '22%', left: '88%', delay: '1.2s'  },
+    { top: '68%', left: '6%',  delay: '0.7s'  },
+    { top: '78%', left: '91%', delay: '2.1s'  },
+    { top: '38%', left: '94%', delay: '1.8s'  },
+    { top: '55%', left: '4%',  delay: '0.4s'  },
+    { top: '15%', left: '55%', delay: '2.5s'  },
+    { top: '85%', left: '42%', delay: '1.5s'  },
+  ];
+
   return (
     <section
       style={{ backgroundColor: '#0B0B0B', minHeight: '100vh', position: 'relative', overflow: 'hidden' }}
       className="flex items-center justify-center text-center px-8 pt-24"
     >
+      {/* Sparkles */}
+      {sparkles.map((s, i) => (
+        <span
+          key={`${s.top}-${s.left}`}
+          className="hero-sparkle"
+          style={{ top: s.top, left: s.left, animationDelay: s.delay }}
+          aria-hidden="true"
+        >
+          ✦
+        </span>
+      ))}
+
       {/* Large background GJ laurel watermark */}
       <div
         style={{
