@@ -59,8 +59,8 @@ export default function Story() {
           </div>
           <div className="story-img-wrap">
             <Image
-              src="/images/IMG_0509.jpeg"
-              alt="Galina at work"
+              src="/images/IMG_9659.jpeg"
+              alt="Rolex Day-Date in yellow gold — inside its box"
               width={600}
               height={480}
               className="story-img"
