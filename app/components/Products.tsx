@@ -18,8 +18,8 @@ export default function Products() {
         {/* Featured large image */}
         <div className="product-img-wrap mb-10 mx-auto" style={{ maxWidth: '760px' }}>
           <Image
-            src="/images/IMG_3658.jpeg"
-            alt="Featured jewelry piece"
+            src="/images/IMG_9656.jpeg"
+            alt="Featured jewelry piece — diamond solitaire"
             width={1200}
             height={560}
             className="product-img"
@@ -31,8 +31,8 @@ export default function Products() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-8" style={{ maxWidth: '760px', margin: '32px auto 0' }}>
           <div className="product-img-wrap">
             <Image
-              src="/images/IMG_1255.jpeg"
-              alt="Custom jewelry"
+              src="/images/IMG_9657.jpeg"
+              alt="Rolex Day-Date in rose gold"
               width={600}
               height={340}
               className="product-img"
@@ -41,8 +41,8 @@ export default function Products() {
           </div>
           <div className="product-img-wrap">
             <Image
-              src="/images/IMG_4476.jpeg"
-              alt="Fine jewelry"
+              src="/images/IMG_9658.jpeg"
+              alt="Rolex Datejust in stainless steel"
               width={600}
               height={340}
               className="product-img"
