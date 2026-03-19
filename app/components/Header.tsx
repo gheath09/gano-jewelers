@@ -1,0 +1,1 @@
+import React from 'react';\nimport './Header.css';\n\nconst Header = () => {\n    return (\n        <header className='header'>\n            <div className='logo'>GANO</div>\n            <button className='contact-button'>Contact</button>\n        </header>\n    );\n};\n\nexport default Header;\n
