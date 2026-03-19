@@ -114,10 +114,12 @@ export default function Hero() {
             style={{
               color: '#D4AF37',
               fontFamily: "'Cormorant Garamond', Georgia, serif",
-              fontSize: '1.05rem',
+              fontSize: '1.35rem',
               fontWeight: 400,
               letterSpacing: '0.18em',
-              marginBottom: '0.3em',
+              marginBottom: '0.25em',
+              textShadow:
+                '0 0 8px rgba(212,175,55,0.5), 0 0 20px rgba(212,175,55,0.25), 0 1px 2px rgba(0,0,0,0.4)',
             }}
             className="mx-auto"
           >
@@ -125,16 +127,34 @@ export default function Hero() {
           </p>
           <p
             style={{
-              color: 'rgba(212,175,55,0.6)',
+              color: 'rgba(212,175,55,0.85)',
               fontFamily: "'Cormorant Garamond', Georgia, serif",
               fontSize: '0.78rem',
               fontWeight: 300,
-              letterSpacing: '0.35em',
+              letterSpacing: '0.38em',
               textTransform: 'uppercase',
+              marginBottom: '0.5em',
+              textShadow:
+                '0 0 6px rgba(212,175,55,0.35), 0 0 14px rgba(212,175,55,0.18), 0 1px 2px rgba(0,0,0,0.35)',
+            }}
+            className="mx-auto"
+          >
+            Professional Jeweler
+          </p>
+          <p
+            style={{
+              color: 'rgba(212,175,55,0.55)',
+              fontFamily: "'Cormorant Garamond', Georgia, serif",
+              fontSize: '0.68rem',
+              fontWeight: 300,
+              letterSpacing: '0.22em',
+              textTransform: 'uppercase',
+              textShadow:
+                '0 0 5px rgba(212,175,55,0.25), 0 1px 2px rgba(0,0,0,0.3)',
             }}
             className="mx-auto mb-10"
           >
-            Personal Jeweler
+            Serving North Carolina coastal communities
           </p>
           <div
             style={{ width: '48px', height: '1px', backgroundColor: '#D4AF37', opacity: 0.6 }}
