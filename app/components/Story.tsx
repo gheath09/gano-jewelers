@@ -16,23 +16,45 @@ export default function Story() {
         </p>
 
         {/* Story text + primary image */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center mb-20">
-          <div>
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start mb-20">
+          <div className="flex flex-col gap-8">
             <p
-              style={{ color: 'rgba(248,248,248,0.72)', lineHeight: '2' }}
-              className="text-xl font-light mb-8"
+              style={{ color: 'rgba(248,248,248,0.72)', lineHeight: '2.1' }}
+              className="text-xl font-light"
             >
-              I&apos;m originally from Tallinn, Estonia. My husband served 12 years as a U.S. Marine,
-              and through that journey, I found my path into jewelry. I learned under a master jeweler
-              with over 40 years of experience, and from that moment, I fell in love with diamonds,
-              design, and the meaning behind every piece.
+              I&apos;m originally from Tallinn, Estonia.<br />
+              My journey into jewelry didn&apos;t start in a showroom — it started with life, family, and the moments that shape us.
             </p>
             <p
-              style={{ color: 'rgba(248,248,248,0.5)', lineHeight: '2' }}
+              style={{ color: 'rgba(248,248,248,0.65)', lineHeight: '2.1' }}
               className="text-lg font-light"
             >
-              Today, I work directly with each client — no middlemen, no pressure. Only the work
-              of creating something that carries meaning for generations.
+              My husband served 12 years as a U.S. Marine, and through those years of movement, change, and resilience, I found myself drawn to something lasting — something meaningful.
+            </p>
+            <p
+              style={{ color: 'rgba(248,248,248,0.65)', lineHeight: '2.1' }}
+              className="text-lg font-light"
+            >
+              I had the opportunity to learn under a master jeweler with over 40 years of experience. That&apos;s where everything changed. I fell in love — not just with diamonds, but with what they represent.
+            </p>
+            <p
+              style={{ color: 'rgba(248,248,248,0.65)', lineHeight: '2.1' }}
+              className="text-lg font-light"
+            >
+              Today, as a mother to my daughter and son, I understand more than ever how important memories are. The quiet moments, the milestones, the pieces we hold onto.
+            </p>
+            <p
+              style={{ color: 'rgba(248,248,248,0.72)', lineHeight: '2.1' }}
+              className="text-lg font-light"
+            >
+              Jewelry, to me, is not just something you wear.<br />
+              It&apos;s something you carry — a reminder of who you are, where you&apos;ve been, and what matters most.
+            </p>
+            <p
+              style={{ color: '#D4AF37', lineHeight: '2.1', fontStyle: 'italic' }}
+              className="text-lg font-light"
+            >
+              Every piece I create begins with your story — and is made to last a lifetime.
             </p>
           </div>
           <div className="story-img-wrap">

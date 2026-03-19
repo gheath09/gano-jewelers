@@ -1,15 +1,78 @@
 export default function Hero() {
   return (
     <section
-      style={{ backgroundColor: '#0B0B0B', minHeight: '100vh' }}
+      style={{ backgroundColor: '#0B0B0B', minHeight: '100vh', position: 'relative', overflow: 'hidden' }}
       className="flex items-center justify-center text-center px-8 pt-24"
     >
-      <div className="fade-in">
-        <p
-          style={{ color: '#D4AF37', letterSpacing: '0.5em' }}
-          className="text-xs uppercase mb-10"
+      {/* Large background GJ laurel watermark */}
+      <div
+        style={{
+          position: 'absolute',
+          top: '50%',
+          left: '50%',
+          transform: 'translate(-50%, -50%)',
+          zIndex: 0,
+          pointerEvents: 'none',
+        }}
+      >
+        <svg
+          viewBox="0 0 64 64"
+          width="750"
+          height="750"
+          xmlns="http://www.w3.org/2000/svg"
+          aria-hidden="true"
+          style={{
+            opacity: 0.07,
+            filter: 'drop-shadow(0 0 32px rgba(212,175,55,0.35)) blur(0.5px)',
+            color: '#D4AF37',
+          }}
         >
-          EST. PRIVATE JEWELER
+          {/* Outer laurel ring */}
+          <circle cx="32" cy="32" r="29" fill="none" stroke="#D4AF37" strokeWidth="0.6" opacity="0.5" />
+          <circle cx="32" cy="32" r="26" fill="none" stroke="#D4AF37" strokeWidth="0.3" opacity="0.3" />
+
+          {/* Left laurel leaves */}
+          <ellipse cx="6" cy="20" rx="4" ry="7" fill="none" stroke="#D4AF37" strokeWidth="0.7" transform="rotate(-30 6 20)" opacity="0.6" />
+          <ellipse cx="5" cy="32" rx="4" ry="7" fill="none" stroke="#D4AF37" strokeWidth="0.7" transform="rotate(-5 5 32)" opacity="0.6" />
+          <ellipse cx="6" cy="44" rx="4" ry="7" fill="none" stroke="#D4AF37" strokeWidth="0.7" transform="rotate(30 6 44)" opacity="0.6" />
+
+          {/* Right laurel leaves */}
+          <ellipse cx="58" cy="20" rx="4" ry="7" fill="none" stroke="#D4AF37" strokeWidth="0.7" transform="rotate(30 58 20)" opacity="0.6" />
+          <ellipse cx="59" cy="32" rx="4" ry="7" fill="none" stroke="#D4AF37" strokeWidth="0.7" transform="rotate(5 59 32)" opacity="0.6" />
+          <ellipse cx="58" cy="44" rx="4" ry="7" fill="none" stroke="#D4AF37" strokeWidth="0.7" transform="rotate(-30 58 44)" opacity="0.6" />
+
+          {/* GJ lettermark */}
+          <text
+            x="32"
+            y="39"
+            textAnchor="middle"
+            fontFamily="'Cormorant Garamond', Georgia, serif"
+            fontSize="22"
+            fontWeight="300"
+            fill="#D4AF37"
+            letterSpacing="1"
+          >
+            GJ
+          </text>
+        </svg>
+      </div>
+
+      {/* Hero content */}
+      <div className="fade-in" style={{ position: 'relative', zIndex: 1 }}>
+        <p
+          style={{
+            color: '#D4AF37',
+            fontFamily: "'Cormorant Garamond', Georgia, serif",
+            fontSize: '1.15rem',
+            fontStyle: 'italic',
+            fontWeight: 300,
+            letterSpacing: '0.04em',
+            lineHeight: '1.7',
+            maxWidth: '560px',
+          }}
+          className="mx-auto mb-10"
+        >
+          Where your story becomes something you can hold.
         </p>
         <h1
           style={{ color: '#F8F8F8', letterSpacing: '0.12em', lineHeight: '1.05' }}
@@ -22,16 +85,17 @@ export default function Hero() {
           className="mx-auto mb-10"
         />
         <p
-          style={{ color: 'rgba(248,248,248,0.7)', maxWidth: '480px', lineHeight: '1.85' }}
-          className="text-xl font-light leading-relaxed mx-auto mb-5"
+          style={{
+            color: 'rgba(248,248,248,0.65)',
+            maxWidth: '500px',
+            lineHeight: '2',
+            fontFamily: "'Cormorant Garamond', Georgia, serif",
+            fontSize: '1.15rem',
+            fontWeight: 300,
+          }}
+          className="mx-auto"
         >
-          Jewelry is never just jewelry.
-        </p>
-        <p
-          style={{ color: 'rgba(248,248,248,0.5)', maxWidth: '460px', lineHeight: '1.85' }}
-          className="text-lg font-light leading-relaxed mx-auto"
-        >
-          It&apos;s memory, legacy, and the moments that define you.
+          Fine jewelry, designed with intention — and made to carry the moments that matter most.
         </p>
         <div
           style={{ width: '1px', height: '64px', backgroundColor: 'rgba(212,175,55,0.3)' }}
