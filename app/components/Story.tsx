@@ -12,7 +12,7 @@ export default function Story() {
           style={{ color: '#D4AF37', letterSpacing: '0.4em' }}
           className="text-xs uppercase mb-16 font-medium"
         >
-          Her Story
+          My Story
         </p>
 
         {/* Story text + primary image */}
@@ -23,19 +23,19 @@ export default function Story() {
               className="text-xl font-light"
             >
               I&apos;m originally from Tallinn, Estonia.<br />
-              My journey into jewelry didn&apos;t start in a showroom — it started with life, family, and the moments that shape us.
+              My journey into jewelry didn&apos;t start in a showroom. It started with life, family, and the moments that shape us.
             </p>
             <p
               style={{ color: 'rgba(248,248,248,0.65)', lineHeight: '2.1' }}
               className="text-lg font-light"
             >
-              My husband served 12 years as a U.S. Marine, and through those years of movement, change, and resilience, I found myself drawn to something lasting — something meaningful.
+              My husband served 12 years as a U.S. Marine, and through those years of movement, change, and resilience, I found myself drawn to something lasting, something meaningful.
             </p>
             <p
               style={{ color: 'rgba(248,248,248,0.65)', lineHeight: '2.1' }}
               className="text-lg font-light"
             >
-              I had the opportunity to learn under a master jeweler with over 40 years of experience. That&apos;s where everything changed. I fell in love — not just with diamonds, but with what they represent.
+              I had the opportunity to learn under a master jeweler with over 40 years of experience. That&apos;s where everything changed. I fell in love, not just with diamonds, but with what they represent.
             </p>
             <p
               style={{ color: 'rgba(248,248,248,0.65)', lineHeight: '2.1' }}
@@ -48,13 +48,13 @@ export default function Story() {
               className="text-lg font-light"
             >
               Jewelry, to me, is not just something you wear.<br />
-              It&apos;s something you carry — a reminder of who you are, where you&apos;ve been, and what matters most.
+              It&apos;s something you carry: a reminder of who you are, where you&apos;ve been, and what matters most.
             </p>
             <p
               style={{ color: '#D4AF37', lineHeight: '2.1', fontStyle: 'italic' }}
               className="text-lg font-light"
             >
-              Every piece I create begins with your story — and is made to last a lifetime.
+              Every piece I create begins with your story and is made to last a lifetime.
             </p>
           </div>
           <div className="story-img-wrap">
