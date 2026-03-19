@@ -1,3 +1,5 @@
+import Link from 'next/link';
+
 export default function Hero() {
   const sparkles = [
     { top: '12%', left: '8%',  delay: '0s'    },
@@ -178,6 +180,11 @@ export default function Hero() {
             style={{ width: '1px', height: '64px', backgroundColor: 'rgba(212,175,55,0.3)' }}
             className="mx-auto mt-20"
           />
+          <div className="hero-fade-3 mt-10">
+            <Link href="/collection" className="hero-collection-btn">
+              VIEW COLLECTION
+            </Link>
+          </div>
         </div>
       </div>
     </section>

@@ -1,6 +1,7 @@
 'use client';
 
 import Image from 'next/image';
+import Link from 'next/link';
 
 function GJLogo() {
   return (
@@ -31,9 +32,14 @@ export default function Header() {
             <span className="gano-sub tracking-widest">JEWELERS</span>
           </div>
         </div>
-        <button onClick={scrollToContact} className="contact-nav-btn text-sm px-6 py-2">
-          CONTACT
-        </button>
+        <nav className="flex items-center gap-4">
+          <Link href="/collection" className="collection-nav-link text-sm px-4 py-2">
+            COLLECTION
+          </Link>
+          <button onClick={scrollToContact} className="contact-nav-btn text-sm px-6 py-2">
+            CONTACT
+          </button>
+        </nav>
       </div>
     </header>
   );
