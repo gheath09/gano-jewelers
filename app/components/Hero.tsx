@@ -1,11 +1,16 @@
+import Sparkles from './Sparkles';
+
 export default function Hero() {
   return (
     <section
       style={{ backgroundColor: '#0B0B0B', minHeight: '100vh', position: 'relative', overflow: 'hidden' }}
       className="flex items-center justify-center text-center px-8 pt-24"
     >
+      <Sparkles />
+
       {/* Large background GJ laurel watermark */}
       <div
+        className="hero-glow-pulse"
         style={{
           position: 'absolute',
           top: '50%',
