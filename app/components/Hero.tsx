@@ -27,7 +27,7 @@ export default function Hero() {
         </span>
       ))}
 
-      {/* Large background GJ laurel watermark */}
+      {/* Background logo watermark */}
       <div
         style={{
           position: 'absolute',
@@ -36,55 +36,26 @@ export default function Hero() {
           transform: 'translate(-50%, -50%)',
           zIndex: 0,
           pointerEvents: 'none',
-          background: 'radial-gradient(circle at center, rgba(212,175,55,0.10) 0%, transparent 70%)',
-          borderRadius: '50%',
-          width: '860px',
-          height: '860px',
+          width: '520px',
+          height: '520px',
           display: 'flex',
           alignItems: 'center',
           justifyContent: 'center',
         }}
       >
-        <svg
-          viewBox="0 0 64 64"
-          width="860"
-          height="860"
-          xmlns="http://www.w3.org/2000/svg"
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img
+          src="/images/logo-gold.png"
+          alt=""
           aria-hidden="true"
           style={{
-            opacity: 0.14,
-            filter: 'drop-shadow(0 0 60px rgba(212,175,55,0.25))',
-            color: '#D4AF37',
+            width: '100%',
+            height: '100%',
+            objectFit: 'contain',
+            opacity: 0.07,
+            filter: 'blur(6px) drop-shadow(0 0 40px rgba(212,175,55,0.30))',
           }}
-        >
-          {/* Outer laurel ring */}
-          <circle cx="32" cy="32" r="29" fill="none" stroke="#D4AF37" strokeWidth="0.6" opacity="0.5" />
-          <circle cx="32" cy="32" r="26" fill="none" stroke="#D4AF37" strokeWidth="0.3" opacity="0.3" />
-
-          {/* Left laurel leaves */}
-          <ellipse cx="6" cy="20" rx="4" ry="7" fill="none" stroke="#D4AF37" strokeWidth="0.7" transform="rotate(-30 6 20)" opacity="0.6" />
-          <ellipse cx="5" cy="32" rx="4" ry="7" fill="none" stroke="#D4AF37" strokeWidth="0.7" transform="rotate(-5 5 32)" opacity="0.6" />
-          <ellipse cx="6" cy="44" rx="4" ry="7" fill="none" stroke="#D4AF37" strokeWidth="0.7" transform="rotate(30 6 44)" opacity="0.6" />
-
-          {/* Right laurel leaves */}
-          <ellipse cx="58" cy="20" rx="4" ry="7" fill="none" stroke="#D4AF37" strokeWidth="0.7" transform="rotate(30 58 20)" opacity="0.6" />
-          <ellipse cx="59" cy="32" rx="4" ry="7" fill="none" stroke="#D4AF37" strokeWidth="0.7" transform="rotate(5 59 32)" opacity="0.6" />
-          <ellipse cx="58" cy="44" rx="4" ry="7" fill="none" stroke="#D4AF37" strokeWidth="0.7" transform="rotate(-30 58 44)" opacity="0.6" />
-
-          {/* GJ lettermark */}
-          <text
-            x="32"
-            y="39"
-            textAnchor="middle"
-            fontFamily="'Cormorant Garamond', Georgia, serif"
-            fontSize="22"
-            fontWeight="300"
-            fill="#D4AF37"
-            letterSpacing="1"
-          >
-            GJ
-          </text>
-        </svg>
+        />
       </div>
 
       {/* Hero content */}
@@ -99,16 +70,28 @@ export default function Hero() {
             letterSpacing: '0.04em',
             lineHeight: '1.7',
             maxWidth: '560px',
+            textShadow: '0 0 8px rgba(255, 215, 160, 0.15)',
           }}
           className="hero-fade-1 mx-auto mb-10"
         >
           Where your story becomes something you can hold.
         </p>
         <h1
-          style={{ color: '#F8F8F8', letterSpacing: '0.12em', lineHeight: '1.05' }}
-          className="hero-fade-2 text-6xl md:text-7xl font-normal mb-10"
+          style={{
+            color: '#FFF8F0',
+            letterSpacing: '0.12em',
+            lineHeight: '1.05',
+            textShadow: '0 0 8px rgba(255, 215, 160, 0.15), 0 0 30px rgba(212,175,55,0.12), 0 0 60px rgba(212,175,55,0.06)',
+            display: 'flex',
+            alignItems: 'baseline',
+            justifyContent: 'center',
+            gap: '0.35em',
+          }}
+          className="hero-fade-2 font-normal mb-10"
+          aria-label="GANO JEWELERS"
         >
-          GANO JEWELERS
+          <span style={{ fontSize: 'clamp(3.5rem, 8vw, 5.625rem)' }}>GANO</span>
+          <span style={{ fontSize: 'clamp(2.3rem, 5.2vw, 3.66rem)' }}>JEWELERS</span>
         </h1>
         <div className="hero-fade-3">
           <div
@@ -117,12 +100,13 @@ export default function Hero() {
           />
           <p
             style={{
-              color: 'rgba(248,248,248,0.65)',
+              color: 'rgba(248,248,248,0.85)',
               maxWidth: '500px',
               lineHeight: '2',
               fontFamily: "'Cormorant Garamond', Georgia, serif",
               fontSize: '1.15rem',
               fontWeight: 300,
+              textShadow: '0 0 8px rgba(255, 215, 160, 0.15)',
             }}
             className="mx-auto"
           >
