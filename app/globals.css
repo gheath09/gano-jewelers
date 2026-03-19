@@ -26,8 +26,25 @@ body {
 
 /* Header */
 .header-bar {
-  background-color: #0B0B0B;
+  background-color: rgba(11, 11, 11, 0.96);
   border-bottom: 1px solid rgba(212, 175, 55, 0.15);
+  backdrop-filter: blur(8px);
+}
+
+/* GJ Logo */
+.gj-logo-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.gj-logo-svg {
+  filter: drop-shadow(0 0 6px rgba(212, 175, 55, 0.45)) drop-shadow(0 0 14px rgba(212, 175, 55, 0.18));
+  transition: filter 0.4s ease;
+}
+
+.gj-logo-wrap:hover .gj-logo-svg {
+  filter: drop-shadow(0 0 10px rgba(212, 175, 55, 0.7)) drop-shadow(0 0 24px rgba(212, 175, 55, 0.3));
 }
 
 .gano-logo {
@@ -48,13 +65,41 @@ body {
   color: #D4AF37;
 }
 
-/* Review card hover */
-.review-card {
-  border: 1px solid rgba(212, 175, 55, 0.15);
-  transition: border-color 0.3s ease;
+/* Story images */
+.story-img-wrap {
+  overflow: hidden;
 }
-.review-card:hover {
-  border-color: rgba(212, 175, 55, 0.5);
+
+.story-img {
+  transition: transform 0.6s ease, filter 0.6s ease;
+  display: block;
+}
+
+.story-img-wrap:hover .story-img {
+  transform: scale(1.04);
+  filter: brightness(1.08);
+}
+
+/* Product images */
+.product-img-wrap {
+  overflow: hidden;
+}
+
+.product-img {
+  transition: transform 0.6s ease, filter 0.6s ease;
+  display: block;
+}
+
+.product-img-wrap:hover .product-img {
+  transform: scale(1.04);
+  filter: brightness(1.08) drop-shadow(0 0 16px rgba(212, 175, 55, 0.2));
+}
+
+/* Review cards */
+.review-card {
+  border-bottom: 1px solid rgba(212, 175, 55, 0.1);
+  padding-bottom: 0;
+  transition: none;
 }
 
 /* Contact buttons */
