@@ -18,7 +18,7 @@ export default function Reviews() {
         />
         <p
           style={{ color: '#D4AF37', letterSpacing: '0.4em' }}
-          className="text-xs uppercase mb-20"
+          className="text-xs uppercase mb-20 font-medium"
         >
           Client Testimonials
         </p>

@@ -10,7 +10,7 @@ export default function Products() {
         />
         <p
           style={{ color: '#D4AF37', letterSpacing: '0.4em' }}
-          className="text-xs uppercase mb-16"
+          className="text-xs uppercase mb-16 font-medium"
         >
           Featured Work
         </p>

@@ -63,6 +63,7 @@ body {
   justify-content: center;
 }
 
+/* GJ Logo image */
 .gj-logo-svg {
   filter: drop-shadow(0 0 6px rgba(212, 175, 55, 0.45)) drop-shadow(0 0 14px rgba(212, 175, 55, 0.18));
   transition: filter 0.4s ease;
@@ -72,9 +73,20 @@ body {
   filter: drop-shadow(0 0 10px rgba(212, 175, 55, 0.7)) drop-shadow(0 0 24px rgba(212, 175, 55, 0.3));
 }
 
-.gano-logo {
+.gano-name {
   color: #D4AF37;
+  font-size: 0.9rem;
+  font-weight: 500;
   letter-spacing: 0.3em;
+  line-height: 1;
+}
+
+.gano-sub {
+  color: #D4AF37;
+  font-size: 0.58rem;
+  font-weight: 400;
+  letter-spacing: 0.42em;
+  line-height: 1;
 }
 
 .contact-nav-btn {
@@ -169,6 +181,11 @@ body {
 
 .review-card:hover .review-quote {
   color: rgba(248, 248, 248, 0.92);
+}
+
+/* review text — subtle weight lift for readability */
+.review-quote {
+  font-weight: 400;
 }
 
 /* Hero sparkles */
