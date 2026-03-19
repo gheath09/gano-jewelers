@@ -1,42 +1,41 @@
-import Image from 'next/image';
 import Header from '../components/Header';
 
 const pieces = [
   {
     id: 'piece-1',
-    src: '/images/IMG_3658.jpeg',
-    alt: 'Featured engagement ring',
-    caption: 'Custom Engagement Ring',
+    title: 'Diamond Ring',
+    description: 'A timeless solitaire set in platinum, crafted to order.',
+    price: 'Price upon request',
   },
   {
     id: 'piece-2',
-    src: '/images/IMG_1255.jpeg',
-    alt: 'Custom jewelry piece',
-    caption: 'Custom Design',
+    title: 'Custom Engagement Ring',
+    description: 'Bespoke design tailored to your vision and story.',
+    price: 'Price upon request',
   },
   {
     id: 'piece-3',
-    src: '/images/IMG_4476.jpeg',
-    alt: 'Fine jewelry',
-    caption: 'Fine Jewelry',
+    title: 'Diamond Band',
+    description: 'Pavé-set diamonds in an elegant, continuous band.',
+    price: 'Price upon request',
   },
   {
     id: 'piece-4',
-    src: '/images/IMG_0501.jpeg',
-    alt: 'Jewelry collection piece',
-    caption: 'Signature Piece',
+    title: 'Signature Pendant',
+    description: 'A refined pendant designed for everyday luxury.',
+    price: 'Price upon request',
   },
   {
     id: 'piece-5',
-    src: '/images/IMG_0503.jpeg',
-    alt: 'Jewelry collection piece',
-    caption: 'Artisan Craft',
+    title: 'Artisan Earrings',
+    description: 'Hand-crafted drop earrings with fine stone accents.',
+    price: 'Price upon request',
   },
   {
     id: 'piece-6',
-    src: '/images/IMG_0509.jpeg',
-    alt: 'Jewelry collection piece',
-    caption: 'Bespoke Creation',
+    title: 'Bespoke Bracelet',
+    description: 'A custom link bracelet built to your exact specifications.',
+    price: 'Price upon request',
   },
 ];
 
@@ -76,15 +75,15 @@ export default function CollectionPage() {
           <div className="collection-grid">
             {pieces.map((piece) => (
               <div key={piece.id} className="collection-card">
-                <Image
-                  src={piece.src}
-                  alt={piece.alt}
-                  width={600}
-                  height={320}
-                  className="collection-img"
-                  style={{ objectFit: 'cover', width: '100%', height: '320px' }}
-                />
-                <p className="collection-caption">{piece.caption}</p>
+                <div className="collection-placeholder" aria-hidden="true" />
+                <div className="collection-card-body">
+                  <h2 className="collection-card-title">{piece.title}</h2>
+                  <p className="collection-card-desc">{piece.description}</p>
+                  <p className="collection-card-price">{piece.price}</p>
+                  <a href="/#contact" className="collection-inquire-btn">
+                    Inquire
+                  </a>
+                </div>
               </div>
             ))}
           </div>
