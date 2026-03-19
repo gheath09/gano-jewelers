@@ -106,7 +106,7 @@ export default function Hero() {
         </p>
         <h1
           style={{ color: '#F8F8F8', letterSpacing: '0.12em', lineHeight: '1.05' }}
-          className="hero-fade-2 text-6xl md:text-7xl font-light mb-10"
+          className="hero-fade-2 text-6xl md:text-7xl font-normal mb-10"
         >
           GANO JEWELERS
         </h1>
