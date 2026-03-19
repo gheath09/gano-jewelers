@@ -6,18 +6,19 @@ import Products from './components/Products';
 import Reviews from './components/Reviews';
 import Services from './components/Services';
 import Contact from './components/Contact';
+import ScrollReveal from './components/ScrollReveal';
 
 export default function Page() {
   return (
     <main>
       <Header />
       <Hero />
-      <Trust />
-      <Story />
-      <Products />
-      <Reviews />
-      <Services />
-      <Contact />
+      <ScrollReveal><Trust /></ScrollReveal>
+      <ScrollReveal><Story /></ScrollReveal>
+      <ScrollReveal><Products /></ScrollReveal>
+      <ScrollReveal><Reviews /></ScrollReveal>
+      <ScrollReveal><Services /></ScrollReveal>
+      <ScrollReveal><Contact /></ScrollReveal>
     </main>
   );
 }
