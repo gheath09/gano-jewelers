@@ -11,6 +11,7 @@ function GJLogo() {
         alt="GANO JEWELERS"
         width={44}
         height={44}
+        priority
         className="gj-logo-svg"
       />
     </div>
